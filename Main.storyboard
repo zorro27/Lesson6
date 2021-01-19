@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SkillBox_Lesson6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0l-3W-TDX">
+                                <rect key="frame" x="113.5" y="169" width="187" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="HT7-On-zBR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введите имя" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBm-js-Bkz">
+                                <rect key="frame" x="126.5" y="219" width="161" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="6KW-0C-eO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdF-fb-vWj">
+                                <rect key="frame" x="173.5" y="293" width="67" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Jj9-aa-1Wk"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Нажмите">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCj-Pu-Gb7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.85749707659999996" green="1" blue="0.96464497599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DBm-js-Bkz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4eW-nk-6gu"/>
+                            <constraint firstItem="r0l-3W-TDX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DYv-Vy-aDo"/>
+                            <constraint firstItem="r0l-3W-TDX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="MaN-Vt-DYs"/>
+                            <constraint firstItem="EdF-fb-vWj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aGI-zQ-Ipc"/>
+                            <constraint firstItem="DBm-js-Bkz" firstAttribute="top" secondItem="r0l-3W-TDX" secondAttribute="bottom" constant="50" id="mLq-7w-ubp"/>
+                            <constraint firstItem="EdF-fb-vWj" firstAttribute="top" secondItem="DBm-js-Bkz" secondAttribute="bottom" constant="40" id="qwN-Y7-rqG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LabelName" destination="r0l-3W-TDX" id="xgO-1d-nxV"/>
+                        <outlet property="TextFildName" destination="DBm-js-Bkz" id="WBV-v6-WWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
